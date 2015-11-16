@@ -30,26 +30,26 @@ public class ClockDisplay
   public ClockDisplay (int hours, int minutes)
   
   {
-        int horas = hours;
-        int minutos = minutes;
+      
+        
       
             if (hours < 10 && minutes < 10)
         {
-            horaActual ="0" + horas + ":0" + minutos;
+            horaActual ="0" + hours + ":0" + minutes;
         }
         
         else if (hours > 10 && minutes > 10)
         {
-            horaActual = horas + ":" + minutos;
+            horaActual = hours + ":" + minutes;
         }
         
         else if (hours < 10 && minutes > 10)
         {
-            horaActual = "0" + horas + ":" + minutos;
+            horaActual = "0" + hours + ":" + minutes;
         }
         else if (hours > 10 && minutes < 10)
         {
-            horaActual = horas + ":0" + minutos;
+            horaActual = hours + ":0" + minutes;
         }
     
   }
@@ -60,23 +60,24 @@ public class ClockDisplay
     public void setTime (int hours, int minutes)
     
   {
+      
        if (hours < 10 && minutes < 10)
         {
-            horaActual ="0" + horas + ":0" + minutos;
+            horaActual ="0" + hours + ":0" + minutes;
         }
         
         else if (hours > 10 && minutes > 10)
         { 
-            horaActual = horas + ":" + minutos;
+            horaActual = hours + ":" + minutes;
         }
         
         else if (hours < 10 && minutes > 10)
         {
-            horaActual = "0" + horas + ":" + minutos;
+            horaActual = "0" + hours + ":" + minutes;
         }
         else if (hours > 10 && minutes < 10)
         {
-            horaActual = horas + ":0" + minutos;
+            horaActual = hours + ":0" + minutes;
         } 
         
   }
