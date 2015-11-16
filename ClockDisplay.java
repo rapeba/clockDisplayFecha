@@ -28,11 +28,12 @@ public class ClockDisplay
    * Constructor que representa las horas y los minutos a los que fijar la hora actual.
    */
   public ClockDisplay (int hours, int minutes)
+  
   {
-      int horas = hours;
-      int minutos = minutes;
-       
-        if (hours < 10 && minutes < 10)
+        int horas = hours;
+        int minutos = minutes;
+      
+            if (hours < 10 && minutes < 10)
         {
             horaActual ="0" + horas + ":0" + minutos;
         }
@@ -87,4 +88,26 @@ public class ClockDisplay
       return horaActual;
    }
    
+    /**
+    * Método timeTick, que permite hacer avanzar un minuto el tiempo fijado.
+    */
+   public void timeTick()
+    {
+        int minutos = 0;
+        int horas = 0;
+       
+       minutos = minutos + 1;
+       if (minutos > 59)
+       {
+           minutos = 0;
+           horas = horas + 1;
+       }
+       horas = horas;
+       if (horas > 23)
+       {
+           minutos = 0;
+           horas = 0;
+       }
+   
+  }
 }
