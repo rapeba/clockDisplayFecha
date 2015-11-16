@@ -58,14 +58,14 @@ public class ClockDisplay
      */
     public void setTime (int hours, int minutes)
     
-    {
+  {
        if (hours < 10 && minutes < 10)
         {
             horaActual ="0" + horas + ":0" + minutos;
         }
         
         else if (hours > 10 && minutes > 10)
-        {
+        { 
             horaActual = horas + ":" + minutos;
         }
         
@@ -79,4 +79,12 @@ public class ClockDisplay
         } 
         
   }
+   /**
+   *  Método getTime que devuelva la hora como String de 5 caracteres.
+   */
+   public String getTime ()
+   {
+      return horaActual;
+   }
+   
 }
