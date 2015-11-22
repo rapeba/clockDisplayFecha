@@ -50,7 +50,7 @@ public class ClockDisplay
      * como un reloj en formato de 12 horas; en caso contrario,
      * como un reloj de 24 horas. El reloj muestra el día (30 días), mes (12 meses) y año (84 años hasta 2099).
      */
-    public ClockDisplay (int horasX, int minutosX, boolean reloj12Horas, int diaX, int mesX, int añoX)
+    public ClockDisplay (int horasX, int minutosX, boolean reloj12Horas,int diaX, int mesX, int añoX) 
     {
         horas =   new NumberDisplay(24);
         minutos = new NumberDisplay(60);	
